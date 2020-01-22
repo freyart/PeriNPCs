@@ -1,0 +1,1272 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "PerisCodexNPCs",
+				"abbreviation": "PERI|NPCs",
+				"full": "Peri's Codex: NPCs from Anywhere",
+				"url": "",
+				"authors": [
+					"Peri"
+				],
+				"convertedBy": [
+					"Peri"
+				]
+			}
+		],
+		"dateAdded": 1579643311
+	},
+	"monster": [
+		{
+			"name": "Shepherd",
+			"shortName": "Shepherd",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"animal handling": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Druidic plus any two languages"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shepherd is a 5th level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). The shepherd has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft|PHB}",
+								"{@spell mending|PHB}",
+								"{@spell poison spray|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds|PHB}",
+								"{@spell entangle|PHB}",
+								"{@spell faerie fire|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barkskin|PHB}",
+								"{@spell locate animals or plants|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell conjure animals|PHB}",
+								"{@spell plant growth|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Animal Companion",
+					"entries": [
+						"The shepherd is accompanied by one of the following creatures: a {@creature black bear|MM}, an {@creature elk|MM}, a {@creature panther|MM}, or a {@creature wolf|MM}."
+					]
+				},
+				{
+					"name": "Language of the Land",
+					"entries": [
+						"The shepherd is able to converse with beasts. Most beasts lack sufficient intelligence to convey or understand complicated concepts, but could converse in simple terms and are willing to help the shepherd with simple tasks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 + 2}) damage."
+					]
+				},
+				{
+					"name": "Summon Fey (1/Day)",
+					"entries": [
+						"The shepherd summons a {@creature dryad|MM} (25%), {@creature pixie|MM} (25%), or {@creature satyr|MM} (50%) that arrives at the start of the shepherd's next turn and remains for 1 minute."
+					]
+				}
+			],
+			"languageTags": [
+				"DU",
+				"X"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Agile Fighter",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 0",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 11,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Swift Strike",
+					"entries": [
+						"If the fighter makes a dash action in a direct line toward a creature, it may make a single melee attack against it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fighter makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, ranged 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"srd": true
+		},
+		{
+			"name": "Arcane Trickster",
+			"shortName": "Trickster",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 0",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 13,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"performance": "+5",
+				"persuasion": "+5",
+				"sleight of hand": "+4",
+				"stealth": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The trickster is a 3rd level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). The trickster has the following bard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand|PHB}",
+								"{@spell vicious mockery|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person|PHB}",
+								"{@spell sleep|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The arcane trickster can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/turn)",
+					"entries": [
+						"The trickster deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the trickster that isn't {@condition incapacitated} and the trickster doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage in melee, or 4 ({@damage 1d4 + 2}) piercing damage at range, plus 3 ({@damage 1d6}) poison damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
+		},
+		{
+			"name": "Bastion",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 52",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+3"
+			},
+			"passive": 12,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the bastion hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Shelter",
+					"entries": [
+						"Allies within 5 feet of the bastion gain a +2 bonus to their AC, if the bastion is not {@condition prone} or {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Shield Charge",
+					"entries": [
+						"If the bastion moves at least 10 feet straight toward a target and then hits it with its flail on the same turn, the target takes an extra 13 ({@damage 3d8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bastion makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage in melee, or 11 ({@damage 2d6 + 4}) piercing damage at range."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Block",
+					"entries": [
+						"The bastion adds +3 AC against an attack that would normally hit it. To do so, the bastion must see the attacker and be wielding a shield."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Brawler",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 15,
+			"int": 9,
+			"wis": 10,
+			"cha": 9,
+			"skill": {
+				"athletics": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Still Standing",
+					"entries": [
+						"If the brawler has 10 or fewer hit points remaining, it has advantage on attack rolls."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The brawler makes two unarmed strikes."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Defender",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item splint armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 9,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage, or 7 ({@damage 1d10 + 2}) damage if used with both hands."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}11 ({@damage 1d6 + 2}) piercing damage in melee, or 11 ({@damage 1d6 + 2}) piercing damage at range."
+					]
+				},
+				{
+					"name": "Goading Attack {@recharge 5}",
+					"entries": [
+						"The defender makes an attack which, if it hits, imposes disadvantage on the target if it attacks any creature but the defender. The defender's attack also deals an additional 4 ({@damage 1d8}) extra damage with the attack."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Block",
+					"entries": [
+						"The defender adds +2 AC against an attack that would normally hit it. To do so, the defender must see the attacker and be wielding a shield."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Duelist",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Suave Defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 12,
+			"int": 12,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Suave Defense",
+					"entries": [
+						"When the duelist is wearing light armor or no armor and is not wielding a shield, its AC includes its Charisma modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The duelist makes two rapier attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The duelist adds +2 AC against an attack that would normally hit it. To do so, the duelist must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Honor-Bound Fighter",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 13,
+			"wis": 15,
+			"cha": 14,
+			"save": {
+				"cha": "+5",
+				"str": "+6",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+6"
+			},
+			"passive": 12,
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Death Before Dishonor",
+					"entries": [
+						"The honor-bound fighter has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Still Standing",
+					"entries": [
+						"While it has 20 hit points or fewer, the fighter has advantage on attack rolls."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fighter makes three weapon attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		},
+		{
+			"name": "Heterodox Priest",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 13,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"religion": "+4"
+			},
+			"passive": 13,
+			"languages": [
+				"Any three languages"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The heterodox priest is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The heterodox priest has the following cleric spells prepared: "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance|PHB}",
+								"{@spell sacred flame|PHB}",
+								"{@spell thaumaturgy|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell command|PHB}",
+								"{@spell cure wounds|PHB}",
+								"{@spell inflict wounds|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell augury|PHB}",
+								"{@spell hold person|PHB}",
+								"{@spell spiritual weapon|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse|PHB}",
+								"{@spell sending|PHB}",
+								"{@spell speak with dead|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell divination|PHB}",
+								"{@spell freedom of movement|PHB}",
+								"{@spell locate creature|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell flame strike|PHB}",
+								"{@spell mass cure wounds|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The heterodox priest makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage in melee, or 5 ({@damage 1d4 + 3}) piercing damage at range."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
+		},
+		{
+			"name": "Journeyman Mage",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor|PHB}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 0",
+				"average": 31
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 11,
+			"int": 16,
+			"wis": 12,
+			"cha": 11,
+			"skill": {
+				"arcana": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"Any three languages"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The journeyman mage is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). The journeyman wizard has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"* The wizard casts these spells on himself before combat."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt|PHB}",
+								"{@spell mending|PHB}",
+								"{@spell minor illusion|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell jump|PHB}",
+								"{@spell mage armor|PHB}*",
+								"{@spell shield|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aganazzar's scorcher|XGE}",
+								"{@spell alter self|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell|PHB}",
+								"{@spell lightning bolt|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) damage if used with both hands."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Spellsword",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"arcana": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Any two languages"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The spellsword is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, +6 to hit with spell attacks). The spellsword has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt|PHB}",
+								"{@spell true strike|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell grease|PHB}",
+								"{@spell shield|PHB}",
+								"{@spell thunderwave|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell flaming sphere|PHB}",
+								"{@spell invisibility|PHB}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "War Magic",
+					"entries": [
+						"When the spellsword uses its action to cast a cantrip or 1st-level spell, it can make an attack with its longsword as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spellsword makes two longsword attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with both hands."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Beast Master",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 16,
+			"cha": 14,
+			"skill": {
+				"animal handling": "+5",
+				"nature": "+3",
+				"survival": "+5"
+			},
+			"passive": 13,
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The beast master is a 2nd level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). The beastmaster has the following ranger spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell animal friendship|PHB}",
+								"{@spell speak with animals|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Exceptional Training",
+					"entries": [
+						"The beast master can have a bond with one or more beasts from the Monster Manual, as determined by the DM. The beast obeys the master's commands as best as it can, and takes its turns on the master's initiative order.",
+						"On it's turn, the beast master can verbally command the beast where to move (with no action required on the master's part). In place of one of its weapon attacks, the beast master can command the beast to take the Attack action. The beast has advantage on attacks it is commanded to make.",
+						"As a bonus action, the beast master can command the beast to take the Dash, Disengage, Dodge, or Help action. It takes attacks of opportunity and other reactions without needing the beast master's command."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The beast master makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}3 ({@damage 1d6 + 3}) damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		}
+	]
+}
