@@ -14,7 +14,7 @@
 				]
 			}
 		],
-		"dateAdded": 1579643311
+		"dateAdded": 1579668317
 	},
 	"monster": [
 		{
@@ -1267,6 +1267,567 @@
 				"RW",
 				"RNG"
 			]
+		},
+		{
+			"name": "Almira the Ice Mage",
+			"isNpc": true,
+			"source": "PerisCodexNPCs",
+			"level": 3,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 0",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 10,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5",
+				"investigation": "+5",
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Elven",
+				"Infernal"
+			],
+			"cr": "1/2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Almira is a 3rd level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). Almira has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell frostbite|XGE}",
+								"{@spell prestidigitation|PHB}",
+								"{@spell ray of frost|PHB}",
+								"{@spell shape water|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell armor of agathys|PHB}",
+								"{@spell grease|PHB}",
+								"{@spell ice knife|XGE}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person|PHB}",
+								"{@spell shatter|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magical Recovery (1/day)",
+					"entries": [
+						"At the end of a short rest, Almira can recover expanded spells slots with a combined level equal to half her sidekick level (rounded up)."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Iceshield Orc",
+					"source": "PotA"
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Brisco the Scoundrel",
+			"isNpc": true,
+			"source": "PerisCodexNPCs",
+			"level": 3,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shifter"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. when shifted)"
+				}
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 12,
+			"int": 12,
+			"wis": 11,
+			"cha": 14,
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"deception": "+4",
+				"persuasion": "+4",
+				"sleight of hand": "+7",
+				"stealth": "+7",
+				"perception": "+2",
+				"acrobatics": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"common"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Brisco deals an extra 3 ({@damage 1d6}) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Brisco that isn't {@condition incapacitated} and Brisco doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On its turn in combat, Brisco can take the Dash, Disengage, Hide or Help action as a bonus action."
+					]
+				},
+				{
+					"name": "Jack of Many Trades",
+					"entries": [
+						"Brisco can add +1 to any ability check he makes that uses a skill but doesn't already include its proficiency bonus."
+					]
+				},
+				{
+					"name": "Switfstride Shifting (1/Rest)",
+					"entries": [
+						"As a bonus action, gain 4 temporary hit points. While shifted, your speed increases by 10 feet. Additionally you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage in melee, or 5 ({@damage 1d4 + 3}) piercing damage at range."
+					]
+				}
+			],
+			"familiar": true,
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Lily the Brawler",
+			"isNpc": true,
+			"source": "PerisCodexNPCs",
+			"level": 3,
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 15",
+				"average": 37
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 9,
+			"save": {
+				"str": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"intimidation": "+1",
+				"survival": "+2",
+				"acrobatics": "+4"
+			},
+			"passive": 10,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Halfling",
+				"Thieves' Cant"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Still Standing",
+					"entries": [
+						"If the brawler has 10 or fewer hit points remaining, it has advantage on attack rolls."
+					]
+				},
+				{
+					"name": "Lucky",
+					"entries": [
+						"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Stout Resilience",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+					]
+				},
+				{
+					"name": "Second Wind (1/Rest)",
+					"entries": [
+						"As a bonus action, Lily can regain hit points equal to ({@dice 1d10 + 3})."
+					]
+				},
+				{
+					"name": "Improved Critical",
+					"entries": [
+						"Lily's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The brawler makes two unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/PERI|NPCs/Brawler.png?v=1.94.13",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"H"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Xander deVries the Minstrel",
+			"shortName": "Xander",
+			"isNpc": true,
+			"source": "PerisCodexNPCs",
+			"level": 3,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 0",
+				"average": 22
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 12,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"cha": "+5"
+			},
+			"skill": {
+				"insight": "+3",
+				"persuasion": "+7",
+				"history": "+3",
+				"arcana": "+3",
+				"performance": "+7",
+				"perception": "+3",
+				"acrobatics": "+4",
+				"deception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Elven",
+				"Sylvan"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Instill Doubt (3/Day)",
+					"entries": [
+						"Xander can use a bonus action to target one creature within 30 feet of it. If the",
+						"target can hear the diplomat, the target must succeed on a {@dc 12} Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the",
+						"start of the diplomat's next turn."
+					]
+				},
+				{
+					"name": "Inspire (3/Day)",
+					"entries": [
+						"Xander can use a bonus action to target one creature within 30 feet of it. Once within the next 10 minutes, the creature can roll a {@dice d6} and add the number rolled to one ability check, attack roll, or saving throw. A creature can have only one inspiration die at a time."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On its turn in combat, Xander can take the Dash, Disengage, Hide or Help action as a bonus action."
+					]
+				},
+				{
+					"name": "Jack of Many Trades",
+					"entries": [
+						"Xander can add +1 to any ability check he makes that uses a skill but doesn't already include its proficiency bonus."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage in melee, or 4 ({@damage 1d4 + 2}) piercing damage at range."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"srd": true
+		},
+		{
+			"name": "Diplomat",
+			"source": "PerisCodexNPCs",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "4d8 + 0",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 12,
+			"wis": 12,
+			"cha": 16,
+			"skill": {
+				"deception": "+7",
+				"insight": "+3",
+				"persuasion": "+7"
+			},
+			"passive": 11,
+			"languages": [
+				"Any two languages"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Instill Doubt (3/Day)",
+					"entries": [
+						"The diplomat can use a bonus action to target one creature within 30 feet of it. If the",
+						"target can hear the diplomat, the target must succeed on a {@dc 12} Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the",
+						"start of the diplomat's next turn."
+					]
+				},
+				{
+					"name": "Inspire (3/Day)",
+					"entries": [
+						"The diplomat can use a bonus action to target one creature within 30 feet of it. Once within the next 10 minutes, the creature can roll a {@dice d6} and add the number rolled to one ability check, attack roll, or saving throw. A creature can have only one inspiration die at a time."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage in melee, or 3 ({@damage 1d4 + 1}) piercing damage at range."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"srd": true
 		}
 	]
 }
